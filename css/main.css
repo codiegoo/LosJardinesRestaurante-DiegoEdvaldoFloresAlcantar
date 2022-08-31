@@ -221,12 +221,22 @@ footer .contacto .contenedor form.formulario .boton-formulario:hover {
     color: #fff;
     border: #64c27b; /* BORDERS */
 }
+footer section.redes-sociales .contenedor a svg.icon-color {
+    color: #FFD24C;
+}
+footer section.redes-sociales .contenedor {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 @media screen and (max-width: 450px){
     footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
         width: 232px;
         height: 24px;
+    }
+    footer section.redes-sociales .contenedor a svg.icon-color {
+        width: 24px;
     }
 }
 
@@ -593,3 +603,8 @@ section.menu {
     }
 
 }
+
+
+/* ---------------BOOSTRAP------------------------*/
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
