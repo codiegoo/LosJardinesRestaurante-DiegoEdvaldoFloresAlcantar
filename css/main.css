@@ -188,20 +188,47 @@ footer {
     background: #262626;
     margin: 0;
     padding-top: 16px;
+    display: flex;
+    justify-content: space-around;
 }
-footer .contacto .contenedor h3 {
+
+footer .redes-sociales .contenedor-nosotros p {
+    color: #fff;
+    font-family: 'Poppins';
+}
+footer .redes-sociales .contenedor-nosotros {
+    display: block;
+    width: 264px;
+    margin-left: 50px;
+    text-align: center;
+}
+footer .redes-sociales .contenedor-nosotros .contenedor-redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .redes-sociales .contenedor-nosotros .contenedor-redes .icon-color {
+    color: #FFD24C;
+}
+footer .contacto .contenedor-contacto h3, footer .redes-sociales .contenedor-nosotros h3 {
     color: #FFD24C;
     font-family: 'Poppins';
     font-weight: 700;
     margin-top: 0;
     text-align: center;
 }
-footer .contacto .contenedor form.formulario {
+footer .contacto .contenedor-contacto form.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
+footer .contacto p {
+    font-size: 12px;
+    font-family: 'Poppins';
+    color: #fff;
+    font-weight: 100;
+}
+footer .contacto .contenedor-contacto form.formulario .textarea-mensaje, .input-correo {
     width: 400px;
     height: 32px;
     margin-bottom: 8px;
@@ -229,6 +256,13 @@ footer section.redes-sociales .contenedor {
     justify-content: space-around;
 }
 
+footer div.img-footer {
+    width: 25%;
+}
+footer .img-footer img {
+    width: 100%;
+}
+
 
 @media screen and (max-width: 450px){
     footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
@@ -237,6 +271,33 @@ footer section.redes-sociales .contenedor {
     }
     footer section.redes-sociales .contenedor a svg.icon-color {
         width: 24px;
+    }
+    footer img {
+        width: 35%;
+        height: 130px;
+        margin-top: 42px;
+    }
+    footer .contacto .contenedor form.formulario .input-nombre, .input-correo, .textarea-mensaje {
+        width: 200px;
+    }
+    footer .contacto .contenedor-contacto {
+        width: 100px;
+    }
+    footer .redes-sociales .contenedor-nosotros {
+        width: 116px;
+        margin-left: 8px;
+    }
+    footer .contacto .contenedor-contacto form.formulario .textarea-mensaje, .input-correo {
+        width: 100px;
+    }
+    footer .contacto .contenedor-contacto h3, footer .redes-sociales .contenedor-nosotros h3 {
+        font-size: 16px;
+    }
+    footer .redes-sociales .contenedor-nosotros p {
+        font-size: 12px;
+    }
+    footer .redes-sociales .contenedor-nosotros .contenedor-redes .icon-color {
+        width: 16px;
     }
 }
 
@@ -248,7 +309,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 600px;
     padding-top: 64px;
 }
 
@@ -515,6 +576,10 @@ section.menu {
         width: 128px;
         display: block;
         margin: 50px auto;
+    }
+
+    footer .contacto .contenedor-contacto form.formulario .textarea-mensaje, .input-correo {
+        width: 200px;
     }
 }
 
