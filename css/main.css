@@ -223,6 +223,8 @@ footer .contacto .contenedor-contacto form.formulario {
     align-items: center;
 }
 footer .contacto p {
+    text-align: center;
+    margin-top: 20px;
     font-size: 12px;
     font-family: 'Poppins';
     color: #fff;
