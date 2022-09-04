@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LosJardinesRestaurant</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="icon" href="../img/apple-icon-144x144.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
@@ -78,18 +80,20 @@
             </div>
         </div>
     </section>
-
+    <div class="img-footer">
       <img src="../img/footer-img.png" alt="plato de comida">
+    </div>
 
     <section class="contacto">
       <div class="contenedor-contacto">
           <h3 class="titulo">Contacto</h3>
           <form class="formulario" action="">
-              <input type="email" placeholder="Correo" name="Correo" class="input-correo" required>
-              <textarea name="mensaje" placeholder="Mensaje" class="textarea-mensaje"></textarea>
-              <input type="submit" value="Enviar" class="boton-formulario">
+              <input type="email" placeholder="Correo" name="Correo" class="input-correo form-control" required>
+              <textarea name="mensaje" placeholder="Mensaje" class="textarea-mensaje form-control"></textarea>
+              <input type="submit" value="Enviar" class="btn btn-outline-warning">
           </form>
       </div>
+      <p> &copy; 2022 LosJardinesRestaurante - Codiego.js</p>
     </section>
     </footer>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

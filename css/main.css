@@ -1,10 +1,7 @@
 body {
     margin: 0;
-
-    background-color: #FFD24C;
+    background: #FFD24C;
 }
-
-
 
 /*-------------------------MENU DE NAVEGACION----------------  */
 
@@ -394,10 +391,22 @@ section.menu {
 }
 .menu .item {
     width: 100%;
-    background-color: #64c27b;
+    background-color: #c1bba9;
+    border-radius: 10px;
+    padding: 0 8px;
 }
 .menu .item h2 {
     text-align: center;
+}
+.menu .item h3 {
+    font-family: 'Merienda';
+    font-weight: 600;
+}
+.menu .item .comida {
+    background-color: #FFD24C;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 8px;
 }
 .menu .item .comida .comida-precio {
     padding: 8px;
