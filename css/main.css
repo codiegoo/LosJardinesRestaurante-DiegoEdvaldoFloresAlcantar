@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #FFD24C;
+    background-color: #FFD24C;
 }
 
 /*-------------------------MENU DE NAVEGACION----------------  */
@@ -100,7 +100,7 @@ body {
    
     nav {
       width: 100%;
-      padding: 70px 0 15px;
+      padding: 70px 0 0px;
     }
     nav ul {
       display: none;
@@ -349,11 +349,12 @@ header .inicio .contenedor-texto h2 {
 }
 
 .grid-galeria {
-    margin: 16px;
+    padding: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
+    background-color: #FFD24C;
 }
 .grid-galeria .grid-item {
     border-radius: 8%;
@@ -491,6 +492,10 @@ section.menu {
 
 .nav-clientes {
     margin: 0%;
+}
+.contenedor-clientes {
+    padding: 16px;
+    background-color: #FFD24C;
 }
 .contenedor-clientes h2, h3 {
     text-align: center;
