@@ -1,0 +1,325 @@
+@import index
+@import menu
+@import galeria
+@import ubicacion
+@import reservar
+@import clientes
+@import responsive
+
+
+body
+    margin: 0
+    background-color: #FFD24C
+
+
+// menu de navegacion
+.brand a img:hover
+  transform: rotate(360deg)
+  transition-duration: 1.2s
+
+.nav-bar
+  height: 70px
+  background: #262626
+
+.brand
+  position: absolute
+  padding-left: 20px
+  float: left
+  line-height: 70px
+  text-transform: uppercase
+  font-size: 1.4em
+
+  a
+    img
+      max-height: 70px
+
+    font-family: "Merienda"
+    color: #ffffff
+    text-decoration: none
+
+.nav-container
+  max-width: 1000px
+  margin: 0 auto
+
+nav
+  float: right
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      float: left
+      position: relative
+
+      a
+        font-family: "Merienda"
+        display: block
+        padding: 0 20px
+        line-height: 70px
+        background: #262626
+        color: #ffffff
+        text-decoration: none
+
+        &:visited
+          font-family: "Merienda"
+          display: block
+          padding: 0 20px
+          line-height: 70px
+          background: #262626
+          color: #ffffff
+          text-decoration: none
+
+        &:hover, &:visited:hover
+          background: #FFD24C
+          color: #262626
+
+        &:not(:only-child):after, &:visited:not(:only-child):after
+          padding-left: 4px
+          content: ' ▾'
+
+      ul li
+        min-width: 190px
+
+        a
+          padding: 15px
+          line-height: 20px
+
+.nav-dropdown
+  position: absolute
+  display: none
+  z-index: 1
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15)
+
+.nav-mobile
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  background: #262626
+  height: 70px
+  width: 70px
+
+@media only screen and (max-width: 798px)
+  .nav-mobile
+    display: block
+
+  nav
+    width: 100%
+    padding: 70px 0 0px
+
+    ul
+      display: none
+
+      li
+        float: none
+
+        a
+          padding: 15px
+          line-height: 20px
+          padding-left: 25%
+
+        ul li a
+          padding-left: 30%
+
+  .nav-dropdown
+    position: static
+
+  .brand a img
+    max-height: 60px
+    margin-top: 5px
+
+@media screen and (min-width: 799px)
+  .nav-list
+    display: block !important
+
+#nav-toggle
+  position: absolute
+  left: 18px
+  top: 22px
+  cursor: pointer
+  padding: 10px 35px 16px 0px
+
+  span
+    cursor: pointer
+    border-radius: 1px
+    height: 5px
+    width: 35px
+    background: #ffffff
+    position: absolute
+    display: block
+    content: ''
+    transition: all 300ms ease-in-out
+
+    &:before, &:after
+      cursor: pointer
+      border-radius: 1px
+      height: 5px
+      width: 35px
+      background: #ffffff
+      position: absolute
+      display: block
+      content: ''
+      transition: all 300ms ease-in-out
+
+    &:before
+      top: -10px
+
+    &:after
+      bottom: -10px
+
+  &.active span
+    background-color: transparent
+
+    &:before, &:after
+      top: 0
+
+    &:before
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(-45deg)
+
+article
+  max-width: 1000px
+  margin: 0 auto
+  padding: 10px
+
+//                           FOOTER
+
+footer
+    background: #262626
+    margin: 0
+    padding-top: 16px
+    display: flex
+    justify-content: space-around
+    .redes-sociales
+        .contenedor-nosotros
+            display: block
+            width: 264px
+            margin-left: 50px
+            text-align: center
+            p
+                color: #fff
+                font-family: 'Poppins'
+            .contenedor-redes
+                display: flex
+                justify-content: space-around
+                svg.icon-color
+                    color: #FFD24C
+    .contacto
+        p
+            text-align: center
+            margin-top: 20px
+            font-size: 12px
+            font-family: 'Poppins'
+            color: #fff
+            font-weight: 100
+        .contenedor-contacto
+            form
+                display: flex
+                flex-direction: column
+                align-items: center
+                .textarea-mensaje,
+                .input-correo
+                    width: 400px
+                    height: 32px
+                    margin-bottom: 8px
+                    font-family: 'Poppins'
+                    font-weight: 300
+                .boton-formulario
+                    padding: 8px
+                    margin-bottom: 16px
+                    font-family: 'Poppins'
+                    font-weight: 400
+                    background-color: #262626
+                    border: #92B4EC
+                .boton-formulario:hover
+                    background: #64c27b
+                    color: #fff
+                    border: #64c27b
+            h3
+                color: #FFD24C
+                font-family: 'Poppins'
+                font-weight: 700
+                margin-top: 0
+                text-align: center
+    section
+        .contenedor-nosotros
+            h3
+                color: #FFD24C
+                font-family: 'Poppins'
+                font-weight: 700
+                margin-top: 0
+                text-align: center
+    div.img-footer
+        width: 25%
+        img
+            width: 100%
+@media screen and (max-width: 450px)
+    footer
+        .contacto
+            .contenedor
+                form.formulario
+                    .input-nombre,
+                    .input-correo,
+                    .textarea-mensaje
+                        width: 232px
+                        height: 24px
+    footer
+        section.redes-sociales
+            .contenedor
+                a
+                    svg.icon-color
+                        width: 24px
+    footer
+        img
+            width: 35%
+            height: 130px
+            margin-top: 42px
+    footer
+        .contacto
+            .contenedor
+                form.formulario
+                    .input-nombre,
+                    .input-correo,
+                    .textarea-mensaje
+                        width: 200px
+    footer
+        .contacto
+            .contenedor-contacto
+                width: 100px
+    footer
+        .redes-sociales
+            .contenedor-nosotros
+                width: 116px
+                margin-left: 8px
+    footer
+        .contacto
+            .contenedor-contacto
+                form.formulario
+                    .textarea-mensaje,
+                    .input-correo
+                        width: 100px
+    footer
+        .contacto
+            .contenedor-contacto
+                h3
+                    font-size: 16px
+    footer
+        .redes-sociales
+            .contenedor-nosotros
+                h3
+                    font-size: 16px
+    footer
+        .redes-sociales
+            .contenedor-nosotros
+                p
+                    font-size: 12px
+    footer
+        .redes-sociales
+            .contenedor-nosotros
+                .contenedor-redes
+                    .icon-color
+                        width: 16px

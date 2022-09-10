@@ -1,0 +1,125 @@
+// MEDIA TABLET
+@media screen and (max-width: 798px)
+    header
+        .inicio
+            width: 234px
+            padding: 8px
+            img
+                width: 108px
+            h1
+                margin-top: 0
+
+    .contenedor-menu
+        .contenedor-comidas
+            grid-template-columns: 1fr 1fr 1fr
+
+    .contenedor-ubicacion
+        display: block
+        margin: 100px auto
+        margin-left: 0
+        padding: 0
+        text-align: center
+        .contenedor-texto-ubicacion
+            .btn-rappi,
+            .btn-uberEats
+                margin:20px auto
+        .googlemaps-ubicacion-losJardines
+            iframe
+                width: auto
+                margin: auto
+
+    section.menu
+        grid-template-columns: 1fr 1fr 1fr
+
+    div.contenedor-reservar
+        display: block
+        margin: 0 auto
+        padding: 0
+        width: 80%
+        img
+            margin: 0 128px
+        .contenedor-texto-reservar
+            text-align: center
+            a
+                width: 128px
+                display: block
+                margin: 50px auto
+
+    footer
+        .contacto
+            .contenedor-contacto
+                form.formulario
+                    .textarea-mensaje,
+                    .input-correo
+                        width: 200px
+
+// MEDIA PHONE
+@media screen and (max-width: 450px)
+    /* inicio */
+
+    header
+        height: 380px
+        .inicio
+            width: 184px
+            padding: 16px
+            .contenedor-texto
+                h2
+                    font-size: 16px
+                h1
+                    margin-top: 0
+
+    /* menu */
+    section.menu
+            grid-template-columns: 1fr 1fr
+
+    .grid-galeria
+        margin: 8px
+        gap: 8px
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        .grid-item
+            img
+                height: 132px
+    
+    /* ubicacion */
+
+    .contenedor-ubicacion
+        margin: 0
+        display: block
+        margin-right: 0px
+        padding: 32px 32px 32px 32px
+        border-radius: 0
+        .googlemaps-ubicacion-losJardines
+            iframe
+                width: auto
+        .contenedor-texto-ubicacion
+            text-align: center
+            .btn-rappi,
+            .btn-uberEats
+                margin: 16px auto
+
+    /* RESERVAR */
+
+    .contenedor-reservar
+        padding: 8px
+        border-radius: 0
+        display: block
+        img
+            margin: 0
+            width: 99%
+            height: 264px
+        .contenedor-texto-reservar 
+            text-align: center
+            padding: 8px
+            margin-bottom: 32px
+            a
+                margin-bottom: 8px
+                text-decoration: none
+    
+    /* CLIENTES */
+
+    body
+        background: #FFD24C
+        .contenedor-clientes
+            .tu-opinion-contenedor
+                margin: 0 auto
