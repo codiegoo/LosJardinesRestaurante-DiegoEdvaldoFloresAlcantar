@@ -5,11 +5,12 @@
 @import reservar
 @import clientes
 @import responsive
+@import variables
 
 
 body
     margin: 0
-    background-color: #FFD24C
+    background-color: rgb(255, 210, 76, 0.6) !important
 
 
 // menu de navegacion
@@ -47,8 +48,7 @@ nav
   ul
     list-style: none
     margin: 0
-    padding: 0
-
+    padding: 0xcv 
     li
       float: left
       position: relative
@@ -191,9 +191,10 @@ article
 footer
     background: #262626
     margin: 0
-    padding-top: 16px
-    display: flex
-    justify-content: space-around
+    padding: 16px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr
     .redes-sociales
         .contenedor-nosotros
             display: block
@@ -223,7 +224,7 @@ footer
                 align-items: center
                 .textarea-mensaje,
                 .input-correo
-                    width: 400px
+                    width: auto
                     height: 32px
                     margin-bottom: 8px
                     font-family: 'Poppins'
@@ -254,9 +255,11 @@ footer
                 margin-top: 0
                 text-align: center
     div.img-footer
-        width: 25%
-        img
-            width: 100%
+      display: flex
+      align-items: center
+      img
+        margin: 0 auto
+        width: 50%
 @media screen and (max-width: 450px)
     footer
         .contacto

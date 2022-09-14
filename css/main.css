@@ -14,6 +14,7 @@ header .inicio {
   text-align: center;
   padding: 32px;
   margin: auto;
+  margin-top: 50px;
   border-radius: 10px;
 }
 header .inicio img {
@@ -48,27 +49,36 @@ section.menu {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px;
+  gap: 8px;
+  padding: 8px;
 }
 section.menu .item {
   width: 100%;
-  background-color: #c1bba9;
+  background-color: #262626;
   border-radius: 10px;
-  padding: 0 8px;
+  padding: 8px 16px;
+  box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.51);
 }
 section.menu .item h2 {
   text-align: center;
 }
 section.menu .item h3 {
+  color: #EEEEEE;
+  text-align: center;
   font-family: "Merienda";
   font-weight: 600;
 }
 section.menu .item .comida {
-  background-color: #FFD24C;
+  background: rgb(255, 229, 142);
+  background: radial-gradient(circle, rgba(255, 229, 142, 0.9) 0%, rgba(255, 215, 95, 0.9) 52%, rgba(255, 215, 94, 0.9) 76%, rgba(255, 215, 98, 0.9) 88%, rgb(255, 210, 76) 95%, rgb(255, 210, 76) 100%);
   border-radius: 8px;
   padding: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0px 0px 4px 4px rgba(255, 250, 136, 0.69);
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(255, 250, 136, 0.69);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(255, 250, 136, 0.69);
 }
 section.menu .item .comida .comida-precio {
   padding: 8px;
@@ -78,6 +88,15 @@ section.menu .item .comida .comida-precio {
 }
 section.menu .item .comida .texto-descripcion {
   text-align: center;
+}
+section.menu .item .comida h4 {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+section.menu .item .comida p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8px;
 }
 
 .nav-galeria {
@@ -94,11 +113,12 @@ section.menu .item .comida .texto-descripcion {
 }
 .grid-galeria .grid-item {
   border-radius: 8%;
+  height: 100%;
 }
 .grid-galeria .grid-item img {
   border-radius: 8%;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .nav-ubicacion {
@@ -106,7 +126,7 @@ section.menu .item .comida .texto-descripcion {
 }
 
 .contenedor-ubicacion {
-  background-color: #FFE69A;
+  background-color: #262626;
   margin: 64px 0;
   margin-right: 64px;
   padding: 64px 64px 64px 0px;
@@ -115,19 +135,34 @@ section.menu .item .comida .texto-descripcion {
   justify-content: space-between;
 }
 .contenedor-ubicacion h2 {
-  margin: 0;
+  font-family: "Merienda";
+  color: #FFD24C;
+  margin: 32px 16px 64px 32px;
 }
-.contenedor-ubicacion .contenedor-texto-ubicacion .btn-rappi,
-.contenedor-ubicacion .contenedor-texto-ubicacion .btn-uberEats {
+.contenedor-ubicacion p {
+  color: #FFD24C;
+  margin: 32px 32px 64px 32px;
+}
+.contenedor-ubicacion .contenedor-texto-ubicacion .enlaces {
+  margin: 0 auto;
   display: flex;
+}
+.contenedor-ubicacion .contenedor-texto-ubicacion .enlaces a {
+  font-family: "Merienda";
+  margin: auto 32px;
   text-align: center;
   justify-content: center;
-  margin: 16px;
-  align-items: center;
   width: 128px;
-  background-color: #92B4EC;
-  height: 32px;
-  border-radius: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #FFD24C;
+  color: #FFD24C;
+  padding: 16px;
+  background: #262626;
+}
+.contenedor-ubicacion .contenedor-texto-ubicacion .enlaces a:hover {
+  color: #262626;
+  background: #FFD24C;
 }
 
 .nav-reservar {
@@ -208,8 +243,11 @@ section.menu .item .comida .texto-descripcion {
 }
 
 @media screen and (max-width: 798px) {
+  header {
+    padding-top: 132px;
+  }
   header .inicio {
-    width: 234px;
+    width: 334px;
     padding: 8px;
   }
   header .inicio img {
@@ -255,10 +293,6 @@ section.menu .item .comida .texto-descripcion {
     width: 128px;
     display: block;
     margin: 50px auto;
-  }
-  footer .contacto .contenedor-contacto form.formulario .textarea-mensaje,
-footer .contacto .contenedor-contacto form.formulario .input-correo {
-    width: 200px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -337,7 +371,7 @@ footer .contacto .contenedor-contacto form.formulario .input-correo {
 }
 body {
   margin: 0;
-  background-color: #FFD24C;
+  background-color: rgba(255, 210, 76, 0.6) !important;
 }
 
 .brand a img:hover {
@@ -378,7 +412,7 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0xcv;
 }
 nav ul li {
   float: left;
@@ -527,9 +561,10 @@ article {
 footer {
   background: #262626;
   margin: 0;
-  padding-top: 16px;
-  display: flex;
-  justify-content: space-around;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 footer .redes-sociales .contenedor-nosotros {
   display: block;
@@ -563,7 +598,7 @@ footer .contacto .contenedor-contacto form {
 }
 footer .contacto .contenedor-contacto form .textarea-mensaje,
 footer .contacto .contenedor-contacto form .input-correo {
-  width: 400px;
+  width: auto;
   height: 32px;
   margin-bottom: 8px;
   font-family: "Poppins";
@@ -597,10 +632,12 @@ footer section .contenedor-nosotros h3 {
   text-align: center;
 }
 footer div.img-footer {
-  width: 25%;
+  display: flex;
+  align-items: center;
 }
 footer div.img-footer img {
-  width: 100%;
+  margin: 0 auto;
+  width: 50%;
 }
 
 @media screen and (max-width: 450px) {
