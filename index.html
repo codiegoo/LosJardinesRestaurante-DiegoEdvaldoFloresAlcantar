@@ -23,33 +23,40 @@
 
   <!-----------------MENU DE NAVEGACION-------------------->
 
-  <section class="nav-bar">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="./index.html"><img src="./img/LOGOjARDINES.png"></a>
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="./secciones/galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a href="./secciones/menu.html">Menu</a>
-          </li>
-          <li>
-            <a href="./secciones/direccion.html">Ubicacion</a>
-          </li>
-          <li>
-            <a href="./secciones/reservar.html">Reservar</a>
-          </li>
-          <li>
-            <a href="./secciones/clientes.html">Clientes</a>
-          </li>
+  <nav class="navbar navbar-dark fixed-top nav-container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/LOGOjARDINES.png" alt="" class="img-logo-nav"></a>
+      <div class="container-links">
+        <ul class="container-items">
+          <li class="item"><a href="./secciones/galeria.html">Galeria</a></li>
+          <li class="item"><a href="./secciones/menu.html">Menu</a></li>
+          <li class="item"><a href="./secciones/direccion.html">Ubicacion</a></li>
+          <li class="item"><a href="./secciones/reservar.html">Reservar</a></li>
+          <li class="item"><a href="./secciones/clientes.html">Clientes</a></li>
         </ul>
-      </nav>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <a href="./index.html"><img src="./img/LOGOjARDINES.png" alt="""></a>
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Los Jardines</h5>
+          </img>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+              <li><a href="./secciones/galeria.html">Galeria</a></li>
+              <li><a href="./secciones/menu.html">Menu</a></li>
+              <li><a href="./secciones/direccion.html">Ubicacion</a></li>
+              <li><a href="./secciones/reservar.html">Reservar</a></li>
+              <li><a href="./secciones/clientes.html">Clientes</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </nav>
 
   <!------------------CONTENIDO -------------------------->
 
@@ -103,11 +110,15 @@
                 <input type="submit" value="Enviar" class="btn btn-outline-warning">
             </form>
         </div>
-        <p> &copy; 2022 LosJardinesRestaurante - Codiego.js</p>
       </section>
+      <div class="copy-main"><p> &copy; 2022 LosJardinesRestaurante - Codiego.js</p></div>
+      <div class="copy0"></div>
+      <div class="copy1"></div>
     </footer>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script  src="./js/function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
     <!--
 ▄█▀─       ─▀█▄
