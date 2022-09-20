@@ -1,3 +1,18 @@
+%font-mr-yellow
+    font-family: "Merienda"
+    color: #FFD24C
+%font-mr-whith
+    font-family: "Merienda"
+    color: #fff
+%font-pp-yellow
+    font-family: "Poppins"
+    color:#FFD24C
+%font-pp-whith
+    font-family: "Poppins"
+    color: #fff
+%font-pp-grey
+    font-family: "Poppins"
+    color: #262626
 header
     background-image: url(../img/banner-lj.jpg)
     background-repeat: no-repeat
@@ -19,9 +34,7 @@ header
             text-align: center
         .contenedor-texto
             h1
-                font-family: 'Merienda'
-                color: #FFD24C
+                @extend %font-mr-yellow
             h2
-                font-family: 'Poppins'
                 font-weight: 100
-                color: #FFD24C
+                @extend %font-pp-yellow

@@ -1,3 +1,11 @@
+@mixin btn-yellow()
+    border-radius: 8px
+    text-decoration: none
+    border: 1px solid #FFD24C
+    color: #FFD24C
+    padding: 16px
+    background: #262626
+    font-family: 'Merienda'
 .nav-ubicacion
     margin: 0
 .contenedor-ubicacion
@@ -21,17 +29,12 @@
             margin: 0 auto
             display: flex
             a
-                font-family: 'Merienda'
+                @include btn-yellow
                 margin: auto 32px
                 text-align: center
                 justify-content: center
                 width: 128px
-                border-radius: 8px
-                text-decoration: none
-                border: 1px solid #FFD24C
-                color: #FFD24C
-                padding: 16px
-                background: #262626
+
             a:hover
                 color: #262626
                 background: #FFD24C
