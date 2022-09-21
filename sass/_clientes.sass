@@ -1,27 +1,29 @@
 .nav-clientes
     margin: 0%
 .contenedor-clientes
+    margin-top: 104px
     padding: 16px
     h2,
     h3
         text-align: center
         font-family: 'Poppins'
     .contenedor-opiniones-clientes
-        display: flex
-        justify-content: space-between
+        display: grid
+        grid-template-columns: 1fr 2fr 2fr 1fr
         padding: 32px
         align-items: center
         font-family: 'Poppins'
         .cliente
-            width: 148px
+            width: auto
             height: auto
             text-align: center
             img
                 width: 64px
                 border-radius: 32px
         button
-            width: 32px
-            height: 32px
+            margin: 0 auto
+            width: 64px
+            height: 64px
             border-radius: 16px
     .tu-opinion-contenedor
         width: 348px

@@ -219,10 +219,12 @@ section.menu .item .comida p {
 .contenedor-reservar .contenedor-texto-reservar h3 {
   font-family: "Merienda";
   font-weight: 700;
+  color: #FFD24C;
 }
 .contenedor-reservar .contenedor-texto-reservar p {
   font-family: "Poppins";
   font-weight: 400;
+  color: #fff;
 }
 .contenedor-reservar .contenedor-texto-reservar a {
   padding: 8px;
@@ -235,6 +237,7 @@ section.menu .item .comida p {
 }
 
 .contenedor-clientes {
+  margin-top: 104px;
   padding: 16px;
 }
 .contenedor-clientes h2,
@@ -243,14 +246,14 @@ section.menu .item .comida p {
   font-family: "Poppins";
 }
 .contenedor-clientes .contenedor-opiniones-clientes {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
   padding: 32px;
   align-items: center;
   font-family: "Poppins";
 }
 .contenedor-clientes .contenedor-opiniones-clientes .cliente {
-  width: 148px;
+  width: auto;
   height: auto;
   text-align: center;
 }
@@ -259,8 +262,9 @@ section.menu .item .comida p {
   border-radius: 32px;
 }
 .contenedor-clientes .contenedor-opiniones-clientes button {
-  width: 32px;
-  height: 32px;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
   border-radius: 16px;
 }
 .contenedor-clientes .tu-opinion-contenedor {
@@ -278,6 +282,182 @@ section.menu .item .comida p {
   border-radius: 32px;
 }
 
+@media screen and (max-width: 414px) {
+  header {
+    height: 50rem !important;
+    padding-bottom: 100px;
+  }
+  footer {
+    border-top: 2px solid #FFD24C !important;
+    padding: 8px !important;
+  }
+  footer .redes-sociales {
+    height: 100% !important;
+  }
+  footer .redes-sociales .contenedor-nosotros h3 {
+    font-size: 16px !important;
+  }
+  footer .redes-sociales .contenedor-nosotros p {
+    font-size: 10px !important;
+  }
+  footer .img-footer {
+    width: 5% !important;
+  }
+  footer .img-footer img {
+    display: none !important;
+  }
+  footer .contacto .contenedor-contacto form .input-correo,
+footer .contacto .contenedor-contacto form .textarea-mensaje {
+    margin-bottom: 22px !important;
+  }
+  footer .copy-main p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  section.grid-galeria {
+    padding: 0 !important;
+    margin-top: 22% !important;
+  }
+  section.grid-galeria .img-9 {
+    display: none !important;
+  }
+  .menu-titulo h2 {
+    margin-top: 25% !important;
+  }
+  section.menu {
+    margin-top: 15% !important;
+  }
+  section.menu .item .comida-precio h4 {
+    font-size: 12px !important;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion h2 {
+    margin: 64px 0px 32px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion p {
+    margin: 16px 0px 0px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion .enlaces a {
+    margin: 32px;
+  }
+  .contenedor-ubicacion .googlemaps-ubicacion-losJardines {
+    width: auto;
+  }
+  .contenedor-reservar {
+    margin-top: 100px !important;
+    margin-bottom: 32px !important;
+    height: 800px;
+  }
+  .contenedor-reservar img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h2 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h3 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar p {
+    font-size: 0.8em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar a {
+    margin: 24px auto !important;
+  }
+  .contenedor-clientes {
+    margin-top: 84px;
+  }
+  .contenedor-clientes .contenedor-opiniones-clientes {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    height: 50rem !important;
+    padding-bottom: 100px;
+  }
+  footer {
+    border-top: 2px solid #FFD24C !important;
+    padding: 8px !important;
+  }
+  footer .redes-sociales {
+    height: 100% !important;
+  }
+  footer .redes-sociales .contenedor-nosotros h3 {
+    font-size: 16px !important;
+  }
+  footer .redes-sociales .contenedor-nosotros p {
+    font-size: 10px !important;
+  }
+  footer .img-footer {
+    width: 5% !important;
+  }
+  footer .img-footer img {
+    display: none !important;
+  }
+  footer .contacto .contenedor-contacto form .input-correo,
+footer .contacto .contenedor-contacto form .textarea-mensaje {
+    margin-bottom: 22px !important;
+  }
+  footer .copy-main p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  section.grid-galeria {
+    padding: 0 !important;
+    margin-top: 22% !important;
+  }
+  section.grid-galeria .img-9 {
+    display: none !important;
+  }
+  .menu-titulo h2 {
+    margin-top: 25% !important;
+  }
+  section.menu {
+    margin-top: 15% !important;
+  }
+  section.menu .item .comida-precio h4 {
+    font-size: 12px !important;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion h2 {
+    margin: 64px 0px 32px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion p {
+    margin: 16px 0px 0px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion .enlaces a {
+    margin: 32px;
+  }
+  .contenedor-ubicacion .googlemaps-ubicacion-losJardines {
+    width: auto;
+  }
+  .contenedor-reservar {
+    margin-top: 100px !important;
+    margin-bottom: 32px !important;
+    height: 800px;
+  }
+  .contenedor-reservar img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h2 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h3 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar p {
+    font-size: 0.8em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar a {
+    margin: 24px auto !important;
+  }
+  .contenedor-clientes {
+    margin-top: 84px;
+  }
+  .contenedor-clientes .contenedor-opiniones-clientes {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 360px) {
   nav.nav-ubi {
     border-bottom: 2px solid #FFD24C !important;
@@ -346,8 +526,102 @@ footer .contacto .contenedor-contacto form .textarea-mensaje {
   .contenedor-reservar {
     margin-top: 100px !important;
     margin-bottom: 32px !important;
-    height: 800px;
-    background-color: #FFE69A;
+    height: 900px;
+  }
+  .contenedor-reservar img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h2 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar h3 {
+    font-size: 1.2em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar p {
+    font-size: 0.8em;
+  }
+  .contenedor-reservar .contenedor-texto-reservar a {
+    margin: 24px auto !important;
+  }
+  .contenedor-clientes {
+    margin-top: 84px;
+  }
+  .contenedor-clientes .contenedor-opiniones-clientes {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  header {
+    height: auto !important;
+    padding-bottom: 100px;
+  }
+  header .inicio {
+    margin: 45% 21% !important;
+  }
+  footer {
+    border-top: 2px solid #FFD24C !important;
+    padding: 8px !important;
+  }
+  footer .redes-sociales {
+    height: 100% !important;
+  }
+  footer .redes-sociales .contenedor-nosotros h3 {
+    font-size: 16px !important;
+  }
+  footer .redes-sociales .contenedor-nosotros p {
+    font-size: 10px !important;
+  }
+  footer .img-footer {
+    width: 5% !important;
+  }
+  footer .img-footer img {
+    display: none !important;
+  }
+  footer .contacto .contenedor-contacto form .input-correo,
+footer .contacto .contenedor-contacto form .textarea-mensaje {
+    margin-bottom: 22px !important;
+  }
+  footer .copy-main p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  section.grid-galeria {
+    padding: 0 !important;
+    margin-top: 22% !important;
+  }
+  section.grid-galeria .img-9 {
+    display: none !important;
+  }
+  .menu-titulo h2 {
+    margin-top: 25% !important;
+  }
+  section.menu {
+    padding: 0;
+    margin-top: 15% !important;
+  }
+  section.menu .item .comida-precio h4 {
+    font-size: 12px !important;
+  }
+  .contenedor-ubicacion {
+    padding: 8px !important;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion h2 {
+    margin: 64px 0px 32px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion p {
+    margin: 16px 0px 0px 0px;
+  }
+  .contenedor-ubicacion .contenedor-texto-ubicacion .enlaces a {
+    margin: 16px;
+  }
+  .contenedor-ubicacion .googlemaps-ubicacion-losJardines {
+    width: auto;
+  }
+  .contenedor-reservar {
+    margin-top: 100px !important;
+    margin-bottom: 32px !important;
+    height: 900px;
   }
   .contenedor-reservar img {
     width: 100% !important;
