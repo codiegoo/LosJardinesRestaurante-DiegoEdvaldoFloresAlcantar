@@ -57,13 +57,15 @@ body
                     font-weight: 700
                     color: #FFD24C
             .offcanvas-body
-                background-color: #262626
+                background: rgb(255,210,64)
+                background: linear-gradient(0deg, rgba(255,210,64,1) 7%, rgba(181,157,78,1) 20%, rgba(138,122,51,1) 32%, rgba(74,65,28,1) 53%, rgba(38,38,38,1) 79%)
                 ul
                     li
                         list-style: none
                         margin: 32px
                         a
                             text-decoration: none
+                            color: #fff
 
 //                           FOOTER
 
@@ -72,13 +74,11 @@ footer
     margin: 0
     padding: 16px
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1.5fr 1fr 1.5fr
     grid-template-rows: 1fr 30px
     .redes-sociales
         .contenedor-nosotros
             display: block
-            width: 264px
-            margin-left: 50px
             text-align: center
             p
                 color: #fff
@@ -103,7 +103,6 @@ footer
                 align-items: center
                 .textarea-mensaje,
                 .input-correo
-                    width: auto
                     height: 32px
                     margin-bottom: 8px
                     font-family: 'Poppins'
